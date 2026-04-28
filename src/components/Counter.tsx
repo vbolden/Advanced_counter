@@ -5,6 +5,23 @@ function Counter () {
     const [count, setCount] = useState(0)
     const [stepValue, setStepValue] = useState<number>(1)
 
+    // FUNCTIONS FOR INCREMENT, DECREMENT, AND RESET COUNT
+    const add = () => {
+        setCount(count + stepValue)
+    }
+
+    const sub = () => {
+        setCount(count - stepValue)
+    }
+
+    // RESET COUNT AND STEP VALUE
+    const reset = () => {
+        setCount(0)
+        setStepValue(1)
+    }
+
+
+
     return (
         <div className="counter">
             <p>counter</p>
