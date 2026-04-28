@@ -28,9 +28,9 @@ function Counter () {
             <h1>Current Count: {count}</h1>
 
             <div className="button-container">
-                <button>Increment</button>
-                <button>Decrement</button>
-                <button>Reset</button>
+                <button onClick={add}>Increment</button>
+                <button onClick={sub}>Decrement</button>
+                <button onClick={reset}>Reset</button>
             </div>
 
             <label> Step Value: 
