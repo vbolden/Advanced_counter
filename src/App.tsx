@@ -5,7 +5,7 @@ function App() {
 
   return (
     <div className='container'>
-      <h1>Advanced Counter</h1>
+      <h1 id='title'>Advanced Counter</h1>
       <Counter />
     </div>
   )
