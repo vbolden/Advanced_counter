@@ -1,0 +1,25 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans',sans-serif;
+}
+
+.container {
+    width: 550px;
+    height: 700px;
+    margin: 0 auto;
+}
+
+#title {
+    text-align: center;
+}
+
+.counter {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 8px;
+}
