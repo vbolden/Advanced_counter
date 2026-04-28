@@ -35,7 +35,7 @@ function Counter () {
             <div className="button-container">
                 <button onClick={add}>Increment</button>
                 <button onClick={sub}>Decrement</button>
-                <button onClick={reset}>Reset</button>
+                <button onClick={reset} className="reset">Reset</button>
             </div>
 
             <label> Step Value: 
