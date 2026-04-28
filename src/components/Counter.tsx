@@ -20,6 +20,11 @@ function Counter () {
         setStepValue(1)
     }
 
+    // HANDLE STEP VALUE CHANGE
+    const handleStepValue = (e: React.ChangeEvent<HTMLInputElement>) => {
+        const newValue = Number(e.target.value)
+        setStepValue(newValue)
+    }
 
 
     return (
@@ -34,7 +39,7 @@ function Counter () {
             </div>
 
             <label> Step Value: 
-                <input type="number" value={stepValue} />
+                <input type="number" value={stepValue} onChange={handleStepValue} />
             </label>
 
             <div className="count-history">
