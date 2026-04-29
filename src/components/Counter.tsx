@@ -1,13 +1,20 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 function Counter () {
     // USE STATES FOR COUNT AND STEP VALUE
-    const [count, setCount] = useState(0)
-    const [stepValue, setStepValue] = useState<number>(1)
+    const [count, setCount] = useState(0);
+    const [stepValue, setStepValue] = useState<number>(1);
+    // USE STATE FOR COUNT HISTORY
+    const [history, setHistory] = useState<string[]>([]);
+
+    useEffect(() => {
+        
+    })
 
     // FUNCTIONS FOR INCREMENT, DECREMENT, AND RESET COUNT
     const add = () => {
         setCount(count + stepValue)
+        
     }
 
     const sub = () => {
